@@ -1,10 +1,11 @@
 // USER VARIABLES SECTION
 
 $accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
+$fontsize: 1rem // Body Font Size
 $textcolor: #333 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $roboto: Roboto, sans-serif // Roboto Font Family
+$ubuntu: Ubuntu, sans-serif // Ubuntu Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px
@@ -27,12 +28,20 @@ $gutter: $grid-gutter-width
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2')
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Ubuntu', normal, 400, '../fonts/ubuntu-regular.woff2')
 
 // GENERAL DOCUMENT STYLES
+
+body
+	font-family: $ubuntu
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor
+
+// INPUTS
 
 ::placeholder
 	color: #666
@@ -48,11 +57,7 @@ input, textarea
 	&:required:valid
 		border-color: green
 
-body
-	font-family: $roboto
-	font-size: $fontsize
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	overflow-x: hidden
-	color: $textcolor
+
++media-breakpoint-up(sm)
+	body
+		font-size: $fontsize * 1.2
