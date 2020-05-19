@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Way2Day</title>
+    <title> -/- Way2Day -\- </title>
     <meta name="description" content="HTML templates">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
@@ -11,17 +11,188 @@
 </head>
 
 <body>
-    <!-- CUSTOM HTML -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p>search</p>
-                <input type="search">
+    <header>
+        <div class="border-bottom">
+            <div class="container">
+                <nav class="navbar p-0">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <i class="fa fa-search"></i>
+                            <a href="#" class="btn btn-link dropdown-toggle" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Москва
+                                </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+                                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                <li><a class="dropdown-item" href="#">English (UK)</a></li>
+                                <li><a class="dropdown-item" href="#">Français</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-link" href="#">Есть и пить<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-link" href="#">Отдыхать</a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="btn btn-link" href="#">Вход</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-link" href="#">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-white bg-white">
+                <span class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="" loading="lazy">
+                </span>
+                <ul class="navbar-nav bd-navbar-nav flex-row mr-auto">
+                    <li>
+                        <a class="btn btn-link" href="#"><i class="far fa-eye">( OK )</i></a>
+                    </li>
+                    <li>
+                        <a class="btn btn-link" href="#"><i class="far fa-eye">( VK )</i></a>
+                    </li>
+                    <li>
+                        <a class="btn btn-link" href="#"><i class="far fa-eye">( FB )</i></a>
+                    </li>
+                    <li>
+                        <a class="btn btn-link" href="#"><i class="far fa-eye">( TW )</i></a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <div class="mt-2">
+                        <div class="input-group">
+                            <div class="custom-control">
+                                <input class="form-control  form-control-lg" type="search" placeholder="Поиск" aria-label="Поиск">
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-white" type="submit"><i class="far fa-eye">( O )</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex align-items-center px-0 border-top-0 border-left-0 border-right-0">
+                                <a class="w-100" href="#"><i class="far fa-eye mr-2"> ( i ) </i> Личные данные</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 border-top-0 border-left-0 border-right-0">
+                                <a class="w-100" href="#"><i class="far fa-eye mr-2"> ( i ) </i> Избранное</a>
+                                <span class="badge badge-primary badge-pill">+2</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 border-top-0 border-left-0 border-right-0">
+                                <a class="w-100" href="#"><i class="far fa-eye mr-2"> ( i ) </i> Заявки</a>
+                                <span class="badge badge-primary badge-pill">+1</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 border-top-0 border-left-0 border-right-0">
+                                <a class="w-100" href="#"><i class="far fa-eye mr-2"> ( i ) </i> Отзывы</a>
+                                <span class="badge badge-primary badge-pill">+1</span>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center px-0 border-0">
+                                <a class="w-100" href="#"><i class="far fa-eye mr-2"> ( i ) </i> Вопросы</a>
+                                <span class="badge badge-primary badge-pill">+1</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="far fa-eye">( H )</i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Избранное</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Личный кабинет бизнес</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item"><a class="nav-link" href="#">Бизнесу</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Пользователю</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Рекламодателю</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Оферта</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">СМИ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item"><a class="nav-link" href="#">Предложить идею</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О проекте</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Политика конфиденциальности</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Карта сайта</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Правила</a></li>
+                    </ul>
+                </div>
+                <div class="col text-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="btn btn-link text-light" href="#"><i class="far fa-eye">( OK )</i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link text-light" href="#"><i class="far fa-eye">( VK )</i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link text-light" href="#"><i class="far fa-eye">( FB )</i></a>
+                        </li>
+                        <li>
+                            <a class="btn btn-link text-light" href="#"><i class="far fa-eye">( TW )</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="text-white">
+                        ok@way2day.com
+                    </p>
+                </div>
+                <div class="col">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <p class="text-white">
+                                © 2020 way2day.com
+                            </p>
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-white">
+                                Для лиц старше 16 лет
+                            </p>
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-white">
+                                Сво-во от регистрации СМИ Эл № ФС23-96356 от 01.03.2020
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-    </div>
+        <!-- Разработано Yoldi -->
+        <a href="#" class="yoldi-link">Разработано Yoldi</a>
+    </footer>
+
+
     <script src="js/app.min.js"></script>
+
 </body>
 
 </html>

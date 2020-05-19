@@ -10,7 +10,9 @@ let paths = {
 
     scripts: {
         src: [
-            // 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+            'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+            'node_modules/@popperjs/core/dist/umd/popper.js',
+            'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             baseDir + '/js/app.js' // app.js. Always at the end
         ],
         dest: baseDir + '/js',
