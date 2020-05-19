@@ -1,6 +1,20 @@
 @import config
 
 +media-breakpoint-up(sm)
+    .card-full
+        .card-img-top
+            border-top-right-radius: 0
+        .col
+            max-width: 270px
+            &.card-right
+                max-width: 100%
+                border-left: 1px solid rgba(0,0,0, .125)
+    .card-top
+        position: relative
+        .tags-line
+            position: absolute
+            bottom: 5px
+            left: 5px
     .section
         padding-top: 30px
         padding-bottom: 60px
